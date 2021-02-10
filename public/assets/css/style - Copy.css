@@ -1,0 +1,439 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.app-content .wizard > .steps > ul > li.current .step {
+    border-color: #1B7E5A ;
+    background-color: #fff;
+    color: #1B7E5A ;
+}
+.app-content .wizard > .steps > ul > li.done .step {
+    background-color: #1B7E5A;
+    border-color: #1B7E5A;
+    color: #fff;
+}
+
+.app-content .wizard.wizard-circle > .steps > ul > li:before, .app-content .wizard.wizard-circle > .steps > ul > li:after {
+    top: 43px;
+    width: 50%;
+    height: 5px;
+    background-color: #1B7E5A;
+}
+.app-content .wizard > .actions > ul > li > a {
+    background: #1B7E5A;
+    color: #fff;
+    display: block;
+    padding: 7px 12px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+.double-slider{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+.value-output {
+    margin-top: 10px;
+
+}
+.progressbar_from {
+    position: absolute;
+    top: -3px;
+    left:0;
+    height: 0px;
+    width: 0;
+    background-color: #1B7E5A ;
+    z-index: 1;
+}
+
+.progressbar_to {
+    position: absolute;
+    top: -3px;
+    right:0;
+    height: 0px;
+    width: 0;
+    background-color: #1B7E5A ;
+    z-index: 1;
+}
+.abc label#basicInput123-error:before {
+    content: "";
+    display: none;
+
+}
+.hien {
+    display: none;
+/   opacity: 0; /
+}
+
+.shown {
+    display: visible;
+    transition: all .5s ease-out;
+    opacity: 1;
+    color: red;
+}
+
+
+.abc input[type='radio'] {
+    display: none;
+}
+
+.abc label {
+    color: #666;
+    font-weight: normal;
+}
+
+.abc label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 4px  solid #1B7E5A;
+    background-color: #D4AB59;
+}
+
+.abc input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background: green;
+}
+
+#blk-2{
+    /*float:right;*/
+}
+
+.abc input[type='radio'] {
+    display: none;
+    /*removes original button*/
+}
+
+.abc label:before {
+    /*styles outer circle*/
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid #1B7E5A;
+    background-color: transparent;
+}
+
+.abc label {
+    position: relative;
+}
+
+.abc label input[type='radio']:checked+span {
+    /*styles inside circle*/
+    border-radius: 11px;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    display: block;
+    background-color: #1B7E5A;
+}
+#img_contain{
+    /*border:1px solid grey;*/
+    margin-top:10px;
+    /*width:520px;*/
+    display: block;
+}
+#file-input{
+    /*margin-left:7px;*/
+    /*padding:10px;*/
+    /*background-color:gray;*/
+}
+#image-preview{
+    height:200px;
+    /*width:auto;*/
+    /*display:block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*padding:5px;*/
+}
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 50px auto;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: "FontAwesome";
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.login_btn{
+    border-color: #21252E ;
+    background-color: #21252E;
+        border: 0px;
+}
+.login_btn:hover{
+     border-color: #D4AB59 ;
+    background-color: #D4AB59;
+}
+.login_color_change{
+    color: #21252E;
+}
+.login_color_change:hover{
+    color: #D4AB59;
+}
+form label.error {
+    color: #d32f2f;
+}
+.form-control:focus{
+  border-color: #D4AB59;
+}
+.table th, .table td {
+
+    vertical-align: middle;
+
+}
+.current-credit-div{
+	position: relative;
+}
+.current-credit{
+	    z-index: 9999;
+         padding: 5px 37px;
+    position: fixed;
+    right: 53px;
+    text-align: center;
+        top: 10%;
+}
+
+
+#mySidenav {
+      z-index: 0;
+  position: fixed;
+  right: 0px;
+  transition: 0.3s;
+  padding: 10px;
+ /* width: 100px;*/
+  text-decoration: none;
+  color: white;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#mySidenav:hover {
+  right: 0px;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+ h4.credits_logs{
+	  position: relative;
+	  color: #fff;
+
+ }
+  .double-slider{
+      display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+.value-output {
+  margin-top: 10px;
+
+}
+
+
+
+
+.progressbar_from {
+  position: absolute;
+  top: -3px;
+  left:0;
+  height: 0px;
+  width: 0;
+  background-color: #FFC107 ;
+  z-index: 1;
+}
+
+.progressbar_to {
+  position: absolute;
+  top: -3px;
+  right:0;
+  height: 0px;
+  width: 0;
+  background-color: #FFC107 ;
+  z-index: 1;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+  height: 0;
+  position: absolute;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Chrome Styles */
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 2.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000;
+  border-radius: 25px;
+  border: 0px solid #000101;
+  position: relative;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #e6e6e6;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: #FFC107 ;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0;
+  transform: translate(0, -50%);
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+}
+
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: '#007bcd';
+}
+
+/* Firefox styles */
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+
+/* IE styles */
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #000;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #ac51b5;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ac51b5;
+}
+

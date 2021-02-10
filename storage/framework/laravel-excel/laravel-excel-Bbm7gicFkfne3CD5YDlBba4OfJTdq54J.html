@@ -1,0 +1,255 @@
+<style>
+    .dataTables_filter {
+        display: none;
+    }
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="author" content="PIXINVENT">
+    <meta name="csrf-token" content="MWjfHmXcs2Xmi3Y2xpRdD1on1O1CkQ3w8qvKQpKs">
+    <title>AppOne</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700"
+          rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="apple-touch-icon" href="http://localhost/app_one/public/app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/app_one/public/app-assets/images/ico/favicon.ico">
+    <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"  rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="http://localhost/app_one/public/css/app.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/weather-icons/climacons.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/fonts/meteocons/style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/core/menu/menu-types/vertical-menu-modern.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/fonts/simple-line-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/pages/timeline.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/tables/extensions/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/tables/extensions/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/css/plugins/forms/validation/form-validation.css">
+
+
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/extensions/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/assets/css/image-uploader.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/assets/css/style.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="http://localhost/app_one/public/app-assets/vendors/css/extensions/sweetalert.css">
+
+</head>
+
+<body class="vertical-layout vertical-menu-modern 2-columns menu-expanded fixed-navbar"
+      data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+<nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-dark navbar-shadow">
+    <div class="navbar-wrapper">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
+                <li class="nav-item mr-auto"> <a class="navbar-brand pt-0" href="http://localhost/app_one/admin/dashboard"> <img class="img-fluid brand-logo" alt="modern admin logo" src="http://localhost/app_one/public/app-assets/images/logo/logo4d.png">
+                    </a> </li>
+                <li class="nav-item d-md-none"> <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="la la-ellipsis-v"></i></a> </li>
+            </ul>
+        </div>
+        <div class="navbar-container content">
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav mr-auto float-left">
+                </ul>
+                <ul class="nav navbar-nav float-right">
+                    <li class="dropdown dropdown-user nav-item"> <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"> <span class="mr-1">Welcome, <span class="user-name text-bold-700">Ivan Leroux</span> </span> <span class="avatar avatar-online"> <img class="img-fluid user_imge"  src="https://appone.s3.amazonaws.com/default.png" alt="avatar"></span> </a>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://localhost/app_one/admin/profile"><i class="ft-user"></i> Edit Profile</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="http://localhost/app_one/logout"onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"><i class="ft-power"></i> Logout</a><form id="logout-form" action="http://localhost/app_one/logout" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="MWjfHmXcs2Xmi3Y2xpRdD1on1O1CkQ3w8qvKQpKs">                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class=" nav-item"><a href="http://localhost/app_one/admin/dashboard"><i class="la la-dashboard"></i><span class="menu-title" data-i18n="nav.dash.main">Dashboard</span></a> </li>
+            <li class=" nav-item"><a href="#"><i class="ft-clipboard"></i><span class="menu-title" data-i18n="nav.page_layouts.main">CMS</span></a>
+                <ul class="menu-content">
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/about-us" data-i18n="nav.page_layouts.fixed_navbar">About</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/marketing" data-i18n="nav.page_layouts.fixed_navbar_footer">Marketing</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/termsandconditions" data-i18n="nav.page_layouts.fixed_navigation">Terms & Conditions</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/privacy-policy" data-i18n="nav.page_layouts.fixed_layout">Privacy Policy</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/signup-terms" data-i18n="nav.page_layouts.fixed_navbar_navigation">Signup Terms</a> </li>
+                </ul>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="icon-diamond"></i><span class="menu-title" data-i18n="nav.page_layouts.main">Extras</span></a>
+                <ul class="menu-content">
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/extras/interest" data-i18n="nav.page_layouts.fixed_navbar">Interests</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/extras/topic" data-i18n="nav.page_layouts.fixed_navbar">Topics</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/extras/advertise" data-i18n="nav.page_layouts.fixed_navbar">Advertis with us</a> </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="http://localhost/app_one/admin/credit-logs"><i class="la la-repeat"></i><span class="menu-title" data-i18n="nav.form_repeater.main">Credit Logs</span></a> </li>
+            <li class="nav-item"><a href="http://localhost/app_one/admin/all-transactions"><i class="la la-money"></i><span class="menu-title" data-i18n="nav.add_on_block_ui.main">Transactions</span></a> </li>
+            <li class="nav-item"><a href="http://localhost/app_one/admin/allmarketing"><i class="icon-volume-2"></i><span class="menu-title" data-i18n="nav.add_on_image_cropper.main">Marketing</span></a> </li>
+            <li class=" nav-item"><a href="#"><i class="ft-trending-up"></i><span class="menu-title" data-i18n="nav.pickers.main">Analytics</span></a>
+                <ul class="menu-content">
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/under-construction" data-i18n="nav.pickers.pickers_date_time_picker">Marketing</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/income" data-i18n="nav.pickers.pickers_color_picker">Income</a> </li>
+                </ul>
+            </li>
+            <li class=" nav-item"><a href="http://localhost/app_one/admin/users"><i class="ft-users"></i><span class="menu-title" data-i18n="nav.add_on_drag_drop.main">Users</span></a> </li>
+            <li class=" nav-item"><a href="http://localhost/app_one/admin/all-pushnotifications"><i class="la la-comments"></i><span class="menu-title" data-i18n="">Push Notifications</span></a> </li>            <li class=" nav-item"><a href="http://localhost/app_one/admin/packages"><i class="la la-dollar"></i><span class="menu-title" data-i18n="">Packages</span></a> </li>
+            <!-- la la-bullseye -->
+
+            <li class=" nav-item"><a href="javascript:void(0)"><i class="la la-gear"></i><span class="menu-title" data-i18n="nav.flot_charts.main">Settings</span></a>
+                <ul class="menu-content">
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/profile" data-i18n="nav.flot_charts.flot_line_charts">Profile</a> </li>
+                    <li><a class="menu-item" href="http://localhost/app_one/admin/payment" data-i18n="nav.flot_charts.flot_bar_charts">Payment</a> </li>
+                </ul>
+            </li>
+            <li class=" nav-item"><a href="http://localhost/app_one/logout"
+                                     onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    <i class="ft-power"></i><span class="menu-title" data-i18n="nav.morris_charts.main">Signout</span></a> <form id="logout-form" action="http://localhost/app_one/logout" method="POST" class="d-none">
+                    <input type="hidden" name="_token" value="MWjfHmXcs2Xmi3Y2xpRdD1on1O1CkQ3w8qvKQpKs">                </form></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-12 col-12 mb-2 breadcrumb-new">
+                    <h3 class="content-header-title mb-0 d-inline-block">Transactions</h3>
+                    <div class="row breadcrumbs-top d-inline-block">
+                        <div class="breadcrumb-wrapper col-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="http://localhost/app_one/admin/dashboard">Dashboard</a> </li>
+                                <li class="breadcrumb-item active">Transactions </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-content collapse show">
+                                <div class="card-body">
+                                    <form name="search" action="http://localhost/app_one/admin/income"method="get">
+                                        <div class="row">
+                                            <div class="col-md-5 mb-1">
+                                                <fieldset>
+                                                    <div class="input-group">
+                                                        <input class="form-control heightinputs" name="date" id="datefield" value="" type="date" >
+                                                        <div class="input-group-append">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-xl-5 col-md-5 ">
+                                                <div class="form-group">
+                                                    <fieldset class="form-group">
+                                                        <input class="form-control heightinputs" name="date" id="datefield" value="" type="date" >
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-2 col-md-2">
+                                                <button type="cancel" class="btn btn-dark heightinputs refresh_btn"> <i class="fonticon-classname"></i> Refresh </button>
+                                                <button type="submit" class="btn btn-dark heightinputs"> <i class="fonticon-classname"></i> Filter </button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                    <div class="table-responsive mt-1">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th> Date</th>
+                                                <th>No of transaction</th>
+                                                <th>Amount</th>
+                                                <th>Fee </th>
+                                                <th>Remaining</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                                                            <tr>
+                                                    <td>18 Jan,2021</td>
+                                                    <td></td>
+                                                    <td>R 4.3125</td>
+                                                    <td>R </td>
+                                                    <td>R </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <td>18 Jan,2021</td>
+                                                    <td></td>
+                                                    <td>R 5.31875</td>
+                                                    <td>R </td>
+                                                    <td>R </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <td>04 Feb,2021</td>
+                                                    <td></td>
+                                                    <td>R 2.5</td>
+                                                    <td>R </td>
+                                                    <td>R </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <td>02 Feb,2021</td>
+                                                    <td></td>
+                                                    <td>R 6</td>
+                                                    <td>R </td>
+                                                    <td>R </td>
+                                                </tr>
+                                                                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="footer footer-static footer-light navbar-border navbar-shadow">
+    <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"> <span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2021 <a class="text-bold-800 grey darken-2" href="http://localhost/app_one/admin/dashboard">APP One</a>. All rights reserved. </span>
+        <span class="float-md-right d-block d-md-inline-blockd-none d-lg-block">Developed with <img src="http://localhost/app_one/public/app-assets/images/logo/heart.gif" width="24px"><a class="text-bold-800 grey darken-2" href="https://arcticedgeapps.com/" target="_blank">by Arctic Edge Apps</a></span>
+    </p>
+</footer>
+<script src="http://localhost/app_one/public/app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/vendors/js/timeline/horizontal-timeline.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/core/app-menu.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/core/app.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/scripts/customizer.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/scripts/validations.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/scripts/custome.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/vendors/js/tables/datatable/datatables.min.js"  type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/scripts/tables/datatables/datatable-basic.js"  type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/vendors/js/pickers/daterange/daterangepicker.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/scripts/image-uploader.min.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/vendors/js/extensions/sweetalert.min.js" type="text/javascript"></script>
+<script src="http://localhost/app_one/public/app-assets/js/scripts/extensions/sweet-alerts.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>

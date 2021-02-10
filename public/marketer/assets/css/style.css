@@ -1,0 +1,292 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.times{
+    display: inline;
+    top: 40px;
+    position: absolute;
+    right: 0;
+}
+.inputwdith input#basicInput123{
+    width: 85%;
+}
+.brand-logo{
+    height:60px ;
+    width: auto !important;
+    padding-top: 10px;
+}
+form .form-actions {
+    border-top: 0px solid #d1d5ea;
+}
+.alert-danger ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    color: #2c303b;
+}
+#txtPassword-error{
+    color: #ff0c0c;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+#txtConfirmPassword-error{
+    color: #ff0c0c;
+    margin-top: 5px;
+    font-size: 11px;
+}
+#message{
+    margin-top: 5px;
+    font-size: 11px;
+}
+.heightinputs {
+    height: calc(2.3em + 0.75rem + 2px);
+}
+.user_imge{
+    min-height: 36px;
+    height: 36px !important;
+}
+.table th, .table td {
+
+    vertical-align: middle;
+
+}
+.current-credit-div{
+	position: relative;
+}
+.current-credit{
+	    z-index: 9999;
+         padding: 5px 37px;
+    position: fixed;
+    right: 53px;
+    text-align: center;
+        top: 15%;
+}
+
+
+#mySidenav {
+
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0;
+}
+
+/*#mySidenav:hover {
+  right: 0px;
+}*/
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+ h4.credits_logs{
+	     position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 0;
+    text-align: center;
+
+ }
+
+ h4.credits_logs:before{
+	/*    font-family: FontAwesome;
+    content: "$";
+    display: inline-block;
+    padding-right: 3px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 0;*/
+ }
+.app-content .wizard > .steps > ul > li.current .step {
+    border-color: #FFB300 ;
+    background-color: #fff;
+    color: #FFB300 ;
+}
+.app-content .wizard > .steps > ul > li.done .step {
+    background-color: #FFB300;
+    border-color: #FFB300;
+    color: #fff;
+}
+
+.app-content .wizard.wizard-circle > .steps > ul > li:before, .app-content .wizard.wizard-circle > .steps > ul > li:after {
+    top: 43px;
+    width: 50%;
+    height: 5px;
+    background-color: #FFB300;
+}
+.app-content .wizard > .actions > ul > li > a {
+    background: #FFB300;
+    color: #fff;
+    display: block;
+    padding: 7px 12px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+  .double-slider{
+      display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+}
+
+.value-output {
+  margin-top: 10px;
+
+}
+.progressbar_from {
+  position: absolute;
+  top: -3px;
+  left:0;
+  height: 0px;
+  width: 0;
+  background-color: #FFC107 ;
+  z-index: 1;
+}
+
+.progressbar_to {
+  position: absolute;
+  top: -3px;
+  right:0;
+  height: 0px;
+  width: 0;
+  background-color: #FFC107 ;
+  z-index: 1;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+  height: 0;
+  position: absolute;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Chrome Styles */
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 2.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000;
+  border-radius: 25px;
+  border: 0px solid #000101;
+  position: relative;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 1px solid #e6e6e6;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: #FFC107 ;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0;
+  transform: translate(0, -50%);
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+}
+
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: '#007bcd';
+}
+
+/* Firefox styles */
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #000;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+
+/* IE styles */
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #000;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ac51b5;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #65001c;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #ac51b5;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ac51b5;
+}
+
+.errormessage{
+    width:85% !important;
+
+}
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .errormessage {
+        width: 80% !important;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .errormessage {
+        width: 80% !important;
+    }
+
+}
